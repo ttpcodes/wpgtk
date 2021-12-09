@@ -55,7 +55,7 @@ def get_cache_path(wallpaper, backend=None):
         backend = settings.get("backend", "wal")
 
     filepath = join(WALL_DIR, wallpaper)
-    filename = cache_fname(filepath, backend, False, WPG_DIR)
+    filename = cache_fname(filepath, backend, True, False, WPG_DIR)
 
     return join(*filename)
 

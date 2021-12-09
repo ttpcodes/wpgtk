@@ -26,6 +26,7 @@ def get_pywal_dict(wallpaper, is_file=False):
     return pywal.colors.get(
         image,
         light=(is_file and light_theme),
+        cols16=True,
         backend=settings.get("backend", "wal"),
         cache_dir=WPG_DIR
     )
